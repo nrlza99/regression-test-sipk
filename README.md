@@ -2,11 +2,38 @@
 
 ![Regression Tests](https://github.com/Auliah17/regression-test-sipk/actions/workflows/test.yml/badge.svg)
 
+---
+
 ## 📋 Deskripsi Tugas
-Implementasi Regression Test Suite untuk REST API CRUD menggunakan **Jest** dan **Supertest**.
+
+Implementasi Regression Test Suite untuk REST API CRUD (Create, Read, Update, Delete) menggunakan **Jest** dan **Supertest**.
+
+### Endpoint yang Diuji
+
+| Method | Endpoint | Deskripsi |
+|--------|----------|-----------|
+| GET | /data | Ambil semua data |
+| GET | /data/:id | Ambil data berdasarkan ID |
+| POST | /data | Tambah data baru |
+| PUT | /data/:id | Update data |
+| DELETE | /data/:id | Hapus data |
+
+---
 
 ## 🚀 Cara Menjalankan Test
 
 ```bash
+# Clone repository
+git clone https://github.com/Auliah17/regression-test-sipk.git
+
+# Masuk ke folder backend
+cd regression-test-sipk/backend
+
+# Install dependencies
 npm install
+
+# Jalankan test
 npm test
+
+# Jalankan dengan coverage
+npm test -- --coverage
