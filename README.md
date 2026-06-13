@@ -23,17 +23,5 @@ Implementasi Regression Test Suite untuk REST API CRUD (Create, Read, Update, De
 ## 🚀 Cara Menjalankan Test
 
 ```bash
-# Clone repository
-git clone https://github.com/Auliah17/regression-test-sipk.git
-
-# Masuk ke folder backend
-cd regression-test-sipk/backend
-
-# Install dependencies
 npm install
-
-# Jalankan test
 npm test
-
-# Jalankan dengan coverage
-npm test -- --coverage
